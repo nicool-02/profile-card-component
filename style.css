@@ -40,7 +40,7 @@
 .card{
     width: 25rem;
     height: 26rem;
-    background: url(/images/bg-pattern-card.svg);
+    background: url(images/bg-pattern-card.svg);
     background-repeat:repeat-x;
     background-color: #fff;
     border-radius: 1rem;
