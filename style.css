@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+.container{
+    background: var(--Dark-cyan);
+    width: 100vw;
+    height: 61rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative; 
+}
+
+.bg-pattern-top{
+    position: absolute;
+    top: -45%;
+    left: -15%;
+}
+
+.bg-pattern-bottom{
+    position: absolute;
+    bottom: -55%;
+    right: -10%;
+}
+
+.card{
+    width: 25rem;
+    height: 26rem;
+    background: url(/images/bg-pattern-card.svg);
+    background-repeat:repeat-x;
+    background-color: #fff;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 5rem var(--Dark-grayish-blue);
+}
+
+.my-img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 6px solid white;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+.name-div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: absolute;
+    top: 53%;
+    left: 26.5%;
+    flex-direction: column;
+}
+
+.name-div h3{
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.name-div h3::after{
+    content: "  22";
+    font-weight: normal;
+    word-spacing: .5rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.name-div p{
+    color: var(--Dark-grayish-blue);
+}
+
+hr{
+    position: relative;
+    top: 77%;
+    opacity: 30%;
+}
+
+.number-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 84%;
+    text-align: center;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.numb-2::after{
+    content: "Likes";
+    font-weight: normal;
+    font-size: .7rem;
+    letter-spacing: .09rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.numb-3::after{
+    content: "Photos";
+    font-weight: normal;
+    font-size: .7rem;
+    letter-spacing: .09rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.numb-1::after{
+    content: "Followers";
+    font-weight: normal;
+    font-size: .7rem;
+    letter-spacing: .09rem;
+    color: var(--Dark-grayish-blue);
+}
+
+
+
+
