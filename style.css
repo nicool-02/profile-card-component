@@ -14,8 +14,14 @@
     --Dark-gray: hsl(0, 0%, 59%);
 }
 
+body {
+    background-color: var(--Dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -26rem left -15rem, bottom -33rem right -12rem;
+}
+
 .container{
-    background: var(--Dark-cyan);
     width: 100vw;
     height: 61rem;
     display: flex;
@@ -23,18 +29,6 @@
     align-items: center;
     overflow: hidden;
     position: relative; 
-}
-
-.bg-pattern-top{
-    position: absolute;
-    top: -45%;
-    left: -15%;
-}
-
-.bg-pattern-bottom{
-    position: absolute;
-    bottom: -55%;
-    right: -10%;
 }
 
 .card{
@@ -47,6 +41,12 @@
     position: relative;
     z-index: 1;
     box-shadow: 0 0 5rem var(--Dark-grayish-blue);
+    transition: .3s ease-in-out;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 .my-img{
