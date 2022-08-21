@@ -41,7 +41,7 @@ body {
     position: relative;
     z-index: 1;
     box-shadow: 0 0 5rem var(--Dark-grayish-blue);
-    transition: .3s ease-in-out;
+    transition: .3s ease;
 }
 
 .card:hover{
